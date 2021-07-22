@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocoMaker", "ChocoMaker\ChocoMaker.csproj", "{F016D857-EF0D-469C-9848-53BACB0E2E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F016D857-EF0D-469C-9848-53BACB0E2E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F016D857-EF0D-469C-9848-53BACB0E2E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F016D857-EF0D-469C-9848-53BACB0E2E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F016D857-EF0D-469C-9848-53BACB0E2E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {102316AF-7DBF-43A8-98E9-0C95DAE7F66C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://nksoft.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ChocoMaker\\ChocoMaker.csproj
+		SccProjectName1 = ChocoMaker
+		SccLocalPath1 = ChocoMaker
+	EndGlobalSection
+EndGlobal

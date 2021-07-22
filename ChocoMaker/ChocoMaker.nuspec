@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ChocoMaker</id>
+    <version>0.0.0.1</version>
+    <description>This package is a simple chocolatey script generator. 
+      You can easially select your current installed software and automatically search for matching packages and select them to generate script for. 
+    </description>
+    <authors>Florian Gilde</authors>
+  </metadata>
+</package>

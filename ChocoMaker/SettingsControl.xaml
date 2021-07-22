@@ -1,0 +1,46 @@
+﻿<UserControl xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ChocoMaker"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:properties="clr-namespace:ChocoMaker.Properties"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             x:Class="ChocoMaker.SettingsControl"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <properties:Settings/>
+    </UserControl.DataContext>
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <dxlc:LayoutControl >
+            <dxlc:LayoutItem Label="Install Command Template">
+               <StackPanel Margin="10,0,0,0" Orientation="Vertical">
+                   <dxe:ButtonEdit Width="600" AllowDefaultButton="False" Text="{Binding InstallCmd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                       <!--<dxe:ButtonEdit.Buttons>
+                        <dxe:ButtonInfo PreviewMouseDown="ButtonInfo_OnClick" IsDefaultButton="True">
+                            <Image Source="{dx:DXImage Image=Reset_16x16.png}"/>
+                        </dxe:ButtonInfo>
+                    </dxe:ButtonEdit.Buttons>-->
+                   </dxe:ButtonEdit>
+                   <TextBlock FontStyle="Italic" Foreground="Gray" Margin="5,0,0,0" Text="Use placeholder {package} for package id"></TextBlock>
+                </StackPanel>
+            </dxlc:LayoutItem>
+        </dxlc:LayoutControl>
+        <StackPanel Margin="0,0,10,0" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1">
+            <dx:SimpleButton Click="ButtonInfo_OnClick" Height="22">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="{dx:DXImage Image=Reset_16x16.png}"/>
+                    <TextBlock Text="Reset all" Margin="10,0,0,0"/>
+                </StackPanel>
+            </dx:SimpleButton>
+        </StackPanel>
+    </Grid>
+</UserControl>

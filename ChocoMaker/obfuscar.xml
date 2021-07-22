@@ -1,0 +1,7 @@
+﻿<Obfuscator>
+  <Var name="InPath" value="bin\Debug" />
+  <Var name="OutPath" value="$(InPath)\obfuscated" />
+  <Var name="HidePrivateApi" value="true" />
+
+  <Module file="$(InPath)\ChocoMaker.exe" />
+</Obfuscator>

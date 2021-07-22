@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettingsControl" type="System.Configuration.UserSettingsControlGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ChocoMaker.Properties.SettingsControl" type="System.Configuration.ClientSettingsControlSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ChocoMaker.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+    <userSettingsControl>
+        <ChocoMaker.Properties.SettingsControl>
+            <setting name="InstallCmd" serializeAs="String">
+                <value>choco install {package} -y</value>
+            </setting>
+        </ChocoMaker.Properties.SettingsControl>
+    </userSettingsControl>
+    <userSettings>
+        <ChocoMaker.Properties.Settings>
+            <setting name="InstallCmd" serializeAs="String">
+                <value>choco install {package} -y</value>
+            </setting>
+        </ChocoMaker.Properties.Settings>
+    </userSettings>
+</configuration>
